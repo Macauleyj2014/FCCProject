@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sittingbourne Book Club</title>
+  </head>
+  <body>
+    <main>
+      <h1>Sittingbourne Book Club</h1>
+      <section>
+        <p>
+          Welcome to the Sittingbourne Book Club! Please fill out the
+          registration form below to join our community of book lovers.
+        </p>
+      </section>
+
+      <section>
+        <h2>Event Details</h2>
+        <ul>
+          <li>Date: <time datetime="2025-08-05">5th August 2025</time></li>
+          <li>Time: 7:00 PM</li>
+          <li>Location: Sittingbourne Library, 123 Book St, Sittingbourne</li>
+          <li>Includes many genres of books</li>
+        </ul>
+      </section>
+
+      <section>
+        <form action="$" method="post">
+          <fieldset>
+            <legend>Sign up now</legend>
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Enter your name"
+            />
+            <br />
+
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Enter your email"
+            />
+            <br />
+
+            <label for="phone">Phone:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              placeholder="Enter your phone number"
+            />
+            <br />
+
+            <label for="no-tickets">Number of tickets:</label>
+            <input
+              type="number"
+              id="no-tickets"
+              name="no-tickets"
+              min="1"
+              max="10"
+              required
+              placeholder="1-10"
+            />
+            <br />
+
+            <p>How will you be attending?</p>
+            <label for="in-person">In person</label>
+            <input
+              type="radio"
+              id="in-person"
+              name="attendance"
+              value="in-person"
+              required
+            />
+            <label for="online">Online</label>
+            <input
+              type="radio"
+              id="online"
+              name="attendance"
+              value="online"
+              required
+            />
+            <br />
+
+            <button type="submit">Register</button>
+          </fieldset>
+        </form>
+      </section>
+
+      <section>
+        <h2>Contact Us</h2>
+        <p>
+          For any questions, please email us at
+          <a href="mailto:example@email.com">example@email.com</a>
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
